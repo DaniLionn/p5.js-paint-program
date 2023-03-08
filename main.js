@@ -130,7 +130,7 @@ save.mousePressed(function() {
  })
 
  instructions.mousePressed(function() {
-  window.alert('INSTRUCTIONS:\n\nClick and drag on the white box to draw\n\nClick on the buttons with the names of colours to change the colour of your brush\n\nPut a number in the box that says "size" to change your brush size\n\nChange the text in the box that says "Untitled" to change the name of your drawing\n\nClick the save button to save your drawing to your device\n\nClick the clear button or press the Delete key on your keyboard to clear the canvas and start over')
+  window.alert('INSTRUCTIONS:\n\nClick and drag on the white box to draw\n\nClick on the buttons with the names of colours to change the colour of your brush\n\nClick the eraser button to be able to erase\n\nPut a number in the box that says "size" to change your brush size\n\nChange the text in the box that says "Untitled" to change the name of your drawing\n\nClick the save button to save your drawing to your device\n\nClick the clear button or press the Delete key on your keyboard to clear the canvas and start over')
 })
 
  red.parent("inputs");
