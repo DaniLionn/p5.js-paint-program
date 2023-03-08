@@ -18,7 +18,7 @@ function setup() {
   
   canvas.parent("mycanvas");
   background(255);
-
+  cursor('https://danilionn.github.io/danis-bot-website/assets/cursors/blackpntbrush.cur')
   let red = createButton('red')
   let orange = createButton('orange')
   let yellow = createButton('yellow')
