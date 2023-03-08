@@ -40,27 +40,11 @@ function setup() {
   drawingNameInput.size(100);
   drawingNameInput.position(95,550)
   let para = createP("This program was made using p5.js v1.6.0")
-  para.position(0, 575)
+  para.position(0, 600)
   let a = createA('http://p5js.org/', '(https://p5js.org/)');
-  a.position(315, 590)
-
-  red.id("r")
-  orange.id("o")
-  yellow.id("y")
-  green.id("g")
-  blue.id("b")
-  purple.id("p")
-  pink.id("pk")
-  brown.id("br")
-  black.id("bk")
-  rainbow.id("rb")
-  erase.id("e")
-  sizeInput.id("size")
-  save.id("save")
-  clearButton.id("clear")
-  drawingNameInput.id("name")
-
-
+  a.position(315, 620)
+  let instructions = createButton('Instructions')
+  instructions.position(7, 580)
 
   red.mousePressed(function (){
     cursor('https://danilionn.github.io/danis-bot-website/assets/cursors/redpntbrsh.cur')
@@ -145,6 +129,10 @@ save.mousePressed(function() {
    drawingName = this.value()
  })
 
+ instructions.mousePressed(function() {
+  window.alert('INSTRUCTIONS:\n\nClick and drag on the white box to draw\n\nClick on the buttons with the names of colours to change the colour of your brush\n\nPut a number in the box that says "size" to change your brush size\n\nChange the text in the box that says "Untitled" to change the name of your drawing\n\nClick the save button to save your drawing to your device\n\nClick the clear button or press the Delete key on your keyboard to clear the canvas and start over')
+})
+
  red.parent("inputs");
  orange.parent("inputs");
  yellow.parent("inputs");
@@ -160,6 +148,7 @@ save.mousePressed(function() {
  save.parent("inputs");
  clearButton.parent("inputs");
  drawingNameInput.parent("inputs");
+ instructions.parent("inputs");
 para.parent("credits")
 a.parent("credits")
 };
@@ -177,6 +166,10 @@ frameRate(15);
       rainbowIndex = 0
     }
   }
+
+  if ((keyIsPressed == true) && (keyCode == 46)) {
+    clearFunction()
+}
 }
 
 function mouseDragged() {
