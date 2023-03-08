@@ -71,7 +71,7 @@ function setup() {
   }) 
 
     blue.mousePressed(function (){
-      cursor('https://danilionn.github.io/danis-bot-website/assets/cursors/bluepntbrush.cur')
+      cursor('https://danilionn.github.io/danis-bot-website/assets/cursors/bluepntbrsh.cur')
       rainbowModeOn = false
     colour = "#0328fc"
   }) 
